@@ -1,0 +1,17 @@
+<article>
+  <h2>{{ article?.title | uppercase }}</h2>
+  
+  <div class="intro">
+    <p><b [innerHTML]="article?.intro"></b></p>
+  </div>
+  
+  <ng-container *ngFor="let data of article?.images">
+    <img src="{{data.medium}}" alt="{{data.alt}}"> 
+  </ng-container>
+  
+  <p [innerHTML]="article?.body"></p>
+  
+  <div class="the-tags">
+    <span *ngFor="let tag of article?.tags" class="the-tag">{{ tag }}</span>
+  </div>
+</article> 

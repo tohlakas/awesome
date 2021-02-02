@@ -1,0 +1,58 @@
+.datatable {
+  padding: 0 60px;
+}
+
+td {
+  cursor: pointer;
+  border-top: 1px solid #ccc;
+}
+
+.container {
+  padding: 0 60px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  th {
+    text-align: left;
+    color: #ff57a2; 
+    font-family: BoosterNextFY;
+    font-weight: 900;
+    text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  td, th {
+    padding: 10px;
+    line-height: 16px;
+  }
+  tbody {
+    tr{
+      &:hover {
+        td {
+          color: #ff57a2; 
+          .text-wrapper {
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
+  td > div {
+    display: flex;
+    .text-wrapper {
+      padding-left: 16px;
+      font-size: 16px;
+      line-height: 24px;
+      p { 
+      }
+    }
+  }
+}
